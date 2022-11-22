@@ -2,6 +2,7 @@ import sys
 import random
 from PySide6 import QtCore, QtWidgets, QtGui
 
+
 class MyWidget(QtWidgets.QWidget):
     def __ini__(self):
         super().__init__()
@@ -9,7 +10,8 @@ class MyWidget(QtWidgets.QWidget):
         self.hello = ["Hello GitHub", "Olá GitHub", "Bonjour GitHub"]
 
         self.button = QtWidgets.QPushButton("Click")
-        self.text = QtWidgets.QLabel("Hello World", alignment=QtCore.Qt.AlignCenter)
+        self.text = QtWidgets.QLabel("Hello World",
+                                     alignment=QtCore.Qt.AlignCenter)
 
         self.layout = QtWidgets.QVBoxLayout(self)
         self.layout.addWidget(self.text)
@@ -30,4 +32,3 @@ if __name__ == "__main__":
     widget.show()
 
     sys.exit(app.exec())
-    
