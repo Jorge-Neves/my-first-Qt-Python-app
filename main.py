@@ -6,7 +6,7 @@ def window():
     widget = QWidget()
 
     text_label = QLabel(widget)
-    text_label.setText("Hello World!")
+    text_label.setText("Hello GitHub!")
     text_label.move(110,85)
 
     widget.setGeometry(50,50,320,200)
